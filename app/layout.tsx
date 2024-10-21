@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Montserrat, Cormorant } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Subscribe from "@/components/Subscribe";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["300"],
+  variable: "--font--montserrat",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const cormorant = Cormorant({
+  subsets: ["latin"],
+  weight: ["300"],
+  variable: "--font--cormorant",
 });
 
 export const metadata: Metadata = {
@@ -26,9 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable}  ${cormorant.variable} antialiased`}
       >
+        <Header />
+
         {children}
+        <Subscribe />
+        <Footer />
       </body>
     </html>
   );
