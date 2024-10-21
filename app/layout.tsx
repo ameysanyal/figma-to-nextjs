@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable}  ${cormorant.variable} antialiased`}
+        className={`${montserrat.variable}  ${cormorant.variable} overflow-x-hidden antialiased`}
       >
         <Header />
 

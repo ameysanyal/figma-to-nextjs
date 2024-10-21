@@ -26,7 +26,7 @@ export default function Home() {
         className="flex flex-col h-[1200px] sm:w-full sm:flex-row bg-darkgreen sm:h-[700px]"
       >
         {/* left side */}
-        <div className="relative left-0 top-16 flex w-[700px] sm:justify-center">
+        <div className="relative -left-8 sm:left-0 top-16 flex w-[700px] sm:justify-center">
           <div>
             <Image
               src="/ring.png"
@@ -214,7 +214,7 @@ export default function Home() {
 
       {/* customer reivews - section5  */}
       <section className="flex relative sm:px-8 bg-darkgreen h-[500px]">
-        <div className="flex flex-col justify-center items-center space-y-10 relative">
+        <div className="flex flex-col justify-center items-center  space-y-10 relative -left-12 sm:left-0">
           <h2 className="text-5xl text-center cormorant text-white w-[500px]">
             Review From Our <br />
             <Image
@@ -313,7 +313,7 @@ export default function Home() {
 
       {/* section7  - visit */}
       <section className="bg-darkgreen relative h-[600px] sm:h-[500px] flex flex-col sm:flex-row justify-start">
-        <div className="flex flex-col sm:justify-start sm:items-start justify-center  items-center  w-[500px] sm:w-1/2 px-32 py-16 space-y-8">
+        <div className="flex flex-col absolute -left-10 sm:justify-start sm:items-start justify-center  items-center  w-[500px] sm:w-1/2 px-32 py-16 space-y-8">
           <h2 className="text-white relative cormorant text-3xl sm:text-5xl sm:text-left text-center">
             Visit Our Store and <br />
             <Image
@@ -340,7 +340,7 @@ export default function Home() {
             src="/section7-image1.jpg"
             width={400}
             height={500}
-            className="rounded-t-full absolute h-[540px] -top-[40px] object-cover z-20 invisible sm:visible"
+            className="rounded-t-full absolute h-[540px] left-[800px] -top-[40px] object-cover z-20 invisible sm:visible"
           />
         </div>
         <div className="flex absolute left-[80px] -bottom-6 sm:left-[450px] sm:-bottom-4 space-x-2 z-30">

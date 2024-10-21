@@ -6,14 +6,14 @@ const Subscribe = () => {
   return (
     <div className="h-[300px] flex flex-col items-center space-y-12 py-12 bg-[url('/bg-spa.jpg')]   bg-no-repeat bg-cover ">
       <div className="relative">
-        <h1 className="cormorant text-5xl text-white text-center">
+        <h1 className="cormorant text-3xl sm:text-5xl text-white text-center">
           Get the latest update about our
           <Image
             src="/ring.png"
             alt="heading"
             width={370}
             height={100}
-            className="absolute w-40 top-[5px] right-[15px] sm:md:right-[180px]"
+            className="absolute w-40 top-[5px] right-20 sm:right-[15px] sm:md:right-[180px]"
           />
           <br /> products and services
         </h1>
